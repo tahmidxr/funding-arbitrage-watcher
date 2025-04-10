@@ -1,6 +1,5 @@
-// pages/api/funding.js
 import axios from "axios";
-import { symbols } from "@/utils/symbols";
+import { symbols } from "@/utils/symbols"; // Import the top 500 coins
 
 export default async function handler(req, res) {
   try {
@@ -38,4 +37,3 @@ export default async function handler(req, res) {
     res.status(500).json({ error: error.message });
   }
 }
-
